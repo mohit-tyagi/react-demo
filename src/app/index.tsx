@@ -13,6 +13,7 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import { GlobalStyle } from '../styles/global-styles';
 
 import { HomePage } from './pages/HomePage/Loadable';
+import { ModalPopup } from './pages/Modal-popup/Loadable';
 import { NotFoundPage } from './pages/NotFoundPage/Loadable';
 import { useTranslation } from 'react-i18next';
 
@@ -30,6 +31,11 @@ export function App() {
 
       <Switch>
         <Route exact path={process.env.PUBLIC_URL + '/'} component={HomePage} />
+        <Route
+          exact
+          path={process.env.PUBLIC_URL + '/modal'}
+          component={ModalPopup}
+        />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />

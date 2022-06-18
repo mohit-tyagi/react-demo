@@ -1,0 +1,79 @@
+body {
+  padding: 0px;
+}
+.container {
+  background-color: aqua;
+  height: 100vh;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .btn {
+    padding: 5px 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: lightblue;
+
+
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    transition: all 0.8s;
+    &:hover {
+      color: red;
+      transition: all 0.8s;
+      background-color: cornflowerblue;
+    }
+  }
+
+  .popup {
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,  -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333333;
+    visibility: hidden;
+    img {
+      width: 100px;
+      margin-top: -50px;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0 , 0 , 0.2);
+    }
+
+    &.open-popup {
+      top: 50%;
+      visibility: visible;
+      transform: translate(-50%,  -50%) scale(1);
+      transition: transform 0.4s , top 0.4s ;
+    }
+
+    h2 {
+      font-size: 38px;
+      font-width: 500;
+      margin:  30px 0 10px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      font-size: 18px;
+      color: white;
+      background: #6fd649;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 10px 0px;
+      box-shadow: 0 5px 5px rgba(0, 0 , 0 , 0.2);
+    }
+  }
+}
