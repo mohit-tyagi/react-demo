@@ -30,10 +30,7 @@ yarn cleanAndSetup
 >
 > You can add or remove literally anything and use whichever library or tools you prefer.
 
-<dl>
-  <dt>Modal Popup</dt>
-  <dd>  [Modal Popup URL](http://localhost:3000/modal)</dd>
-</dl>
+For  popup demo -  [Modal Popup](http://localhost:3000/modal)  - http://localhost:3000/modal
 
 
 
