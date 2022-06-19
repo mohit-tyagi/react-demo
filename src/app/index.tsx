@@ -14,6 +14,7 @@ import { GlobalStyle } from '../styles/global-styles';
 
 import { HomePage } from './pages/HomePage/Loadable';
 import { ModalPopup } from './pages/Modal-popup/Loadable';
+import { Navigation } from './pages/Navigation/Loadable';
 import { NotFoundPage } from './pages/NotFoundPage/Loadable';
 import { useTranslation } from 'react-i18next';
 
@@ -35,6 +36,11 @@ export function App() {
           exact
           path={process.env.PUBLIC_URL + '/modal'}
           component={ModalPopup}
+        />
+        <Route
+          exact
+          path={process.env.PUBLIC_URL + '/navigation'}
+          component={Navigation}
         />
         <Route component={NotFoundPage} />
       </Switch>

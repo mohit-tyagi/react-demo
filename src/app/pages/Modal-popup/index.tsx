@@ -11,9 +11,9 @@ export function ModalPopup() {
           Submit
         </button>
         <div className={`popup ${isOpen ? 'open-popup' : ''}`}>
-          <img src="images/kisspng-check-mark.png" />
-          <h2>Thank you!</h2>
-          <p> Your feedback has been saved, thanks for the response !</p>
+          <img src="./images/kisspng-check-mark.png" alt="tick" />
+          <h2>Thank you! </h2>
+          <p> Your feedback has been saved, thanks for the response ! </p>
           <button onClick={() => setIsOpen(false)}> Ok </button>
         </div>
       </div>
