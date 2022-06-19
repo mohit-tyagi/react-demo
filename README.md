@@ -30,9 +30,8 @@ yarn cleanAndSetup
 >
 > You can add or remove literally anything and use whichever library or tools you prefer.
 
-For  popup demo -  [Modal Popup](http://localhost:3000/modal)  - http://localhost:3000/modal
-
-
+1) Popup Modal - http://localhost:3000/modal
+2) Mobile Navigation -  http://localhost:3000/navigation
 
 
 ## License
