@@ -1,0 +1,139 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+//https://uicookies.com/css-card-design/
+:root {
+  --brand-clr : #e0c9cc;
+}
+
+.main-container {
+  background-color: var(--brand-clr);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .card {
+    width: 50%;
+    height: 40%;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 10px 10px var(--brand-clr);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+
+    .left {
+      flex-grow: 1;
+      max-width: 50%;
+      position: relative;
+      padding: 10px;
+
+      .image-container {
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .image{
+          width: 250px;
+        }
+      }
+
+      .size-selection {
+        position: absolute;
+        bottom: 10px;
+        font-size: 10px;
+        color: var(--brand-clr);
+        span{
+          color: #a28890;
+        }
+        .size-list{
+          display: flex;
+          padding: 0;
+          margin-top: 3px;
+          .size {
+            text-align: center;
+            list-style: none;
+            width: 30px;
+            height: 25px;
+            margin: 2px;
+            padding: 3px 0;
+            border: 1px solid var(--brand-clr);
+            &:hover {
+              font-size: 12px;
+              color: #a28890;
+              font-weight: 500;
+              padding: 2px 0;
+              transition: 0.5s;
+              border: 2px solid var(--brand-clr);
+            }
+          }
+        }
+      }
+    }
+    .right {
+      flex-grow: 1;
+      max-width: 50%;
+      position: relative;
+      padding: 10px;
+
+      .categories{
+        display: block;
+        margin-top: 20px;
+        font-weight: 100;
+        font-size: 10px;
+        color: var(--brand-clr);
+      }
+      .title{
+        margin-top: 0;
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+      .price {
+        display: block;
+        color: #c4a4ab;
+        font-weight: 500;
+        font-size: 18px;
+      }
+      .details{
+        margin-top: 10px;
+        display: block;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 100;
+        overflow: auto;
+        height: 120px;
+      }
+      .actions{
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: normal;
+        .add-to-cart{
+          width: 70%;
+          background-color: var(--brand-clr);
+          color: #ffffff;
+          padding: 5px 0;
+          border-radius: 5px 0 0 5px;
+          border: none;
+          letter-spacing: 1px;
+        }
+        .favorite{
+          margin-left: 5px;
+          width: 15%;
+          background-color: var(--brand-clr);
+          color: #ffffff;
+          padding: 5px 0;
+          border-radius: 0 5px 5px 0;
+          border: none;
+          &:hover{
+            color: red;
+          }
+        }
+      }
+
+    }
+  }
+}
