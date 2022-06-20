@@ -17,6 +17,8 @@ import { ModalPopup } from './pages/Modal-popup/Loadable';
 import { Navigation } from './pages/Navigation/Loadable';
 import { NotFoundPage } from './pages/NotFoundPage/Loadable';
 import { useTranslation } from 'react-i18next';
+import { NavigationDesktop } from './pages/Navigation-Desktop/Loadable';
+import { PdpShoes } from './pages/Pdp-shoes/Loadable';
 
 export function App() {
   const { i18n } = useTranslation();
@@ -41,6 +43,16 @@ export function App() {
           exact
           path={process.env.PUBLIC_URL + '/navigation'}
           component={Navigation}
+        />
+        <Route
+          exact
+          path={process.env.PUBLIC_URL + '/pdp'}
+          component={PdpShoes}
+        />
+        <Route
+          exact
+          path={process.env.PUBLIC_URL + '/navigation-desktop'}
+          component={NavigationDesktop}
         />
         <Route component={NotFoundPage} />
       </Switch>

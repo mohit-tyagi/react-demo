@@ -32,6 +32,7 @@ yarn cleanAndSetup
 
 1) Popup Modal - http://localhost:3000/modal
 2) Mobile Navigation -  http://localhost:3000/navigation
+3) PDP page shoes -  http://localhost:3000/pdp
 
 
 ## License
